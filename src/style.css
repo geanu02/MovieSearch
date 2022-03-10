@@ -94,7 +94,6 @@ small {
 
 .card-list {
     margin-top: 4rem;
-
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -108,6 +107,12 @@ small {
     overflow: hidden;
     position: relative;
     background-color: #373b69;
+}
+
+@media (pointer: coarse) {
+    .card {
+        width: 190px;
+    }
 }
 
 .card--content {
