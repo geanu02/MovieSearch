@@ -28,8 +28,13 @@ small {
 .container {
     margin: 0 auto;
     max-width: 1000px;
-    min-width: 525px;
     padding: 40px;
+}
+
+@media (pointer: fine) {
+    .container {
+        min-width: 525px;
+    }
 }
 
 .title {
