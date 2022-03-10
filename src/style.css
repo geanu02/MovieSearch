@@ -111,7 +111,7 @@ small {
 
 @media (pointer: coarse) {
     .card {
-        width: 190px;
+        width: 100%;
     }
 }
 
