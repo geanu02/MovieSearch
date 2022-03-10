@@ -28,6 +28,7 @@ small {
 .container {
     margin: 0 auto;
     max-width: 1000px;
+    min-width: 525px;
     padding: 40px;
 }
 
@@ -44,7 +45,7 @@ small {
 }
 
 .input {
-    width: 90%;
+    width: 100%;
     font-size: 1.6rem;
     padding: 0.5rem 2rem;
     line-height: 2.8rem;
@@ -54,9 +55,10 @@ small {
 }
 
 .button {
+    min-width: 100px;
     background-color: rgba(0,0,0,0.75);
     color: white;
-    padding: 0.5rem 2rem;
+    padding: 1rem 2rem;
     border: 1px solid rgba(0,0,0,0.75);
     border-radius: 20px;
     font-size: 1.6rem;
@@ -65,7 +67,8 @@ small {
 }
 
 .button:hover {
-    background-color: rgba(0,0,0,0.85);
+    background-color: rgba(0,0,0,0.10);
+    transition: background-color 250ms;
 }
 
 @media (min-width: 786px) {
@@ -74,8 +77,14 @@ small {
     }
     
     .input {
+        width: 90%;
         margin-bottom: 0;
     }
+
+    .button {
+        margin-left: 15px;
+    }
+
 }
 
 .card-list {
