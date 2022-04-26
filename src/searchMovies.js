@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import MovieCard from './movieCard.js';
 import apiConfig from "./utils/config.js";
 import Button from "@mui/material/Button";
+import TextField from "@mui/material/TextField";
 
 export default function SearchMovies() {
     
@@ -32,16 +33,17 @@ export default function SearchMovies() {
     return (
         <>
             <form className="form" onSubmit={searchMovies}>
-                <input 
-                    className="input" 
+                <TextField
+                    className="queryText-main"
+                    variant="filled"
                     type="text" 
                     name="query"
-                    placeholder="start here!"
+                    label="Movie Name"
                     value={query} 
                     onChange={(e) => setQuery(e.target.value)}
                     required
                 />
-                <Button variant="contained" className="button" type="submit">find it!</Button>
+                <Button variant="contained" type="submit">Search</Button>
             </form>
             <div className="card-list">
                 {/* Load movie query */}
