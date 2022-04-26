@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import MovieCard from './movieCard.js';
 import apiConfig from "./utils/config.js";
+import Button from "@mui/material/Button";
 
 export default function SearchMovies() {
     
@@ -40,7 +41,7 @@ export default function SearchMovies() {
                     onChange={(e) => setQuery(e.target.value)}
                     required
                 />
-                <button className="button" type="submit">find it!</button>
+                <Button variant="contained" className="button" type="submit">find it!</Button>
             </form>
             <div className="card-list">
                 {/* Load movie query */}
